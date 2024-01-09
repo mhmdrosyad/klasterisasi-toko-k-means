@@ -1,0 +1,3 @@
+# SISTEM KLASTERISASI TOKO BERKAH DUA K-MEANS
+
+FLASK (PY) only not using database
