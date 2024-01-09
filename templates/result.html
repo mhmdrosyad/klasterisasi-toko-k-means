@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pagetitle">
+    <h2>{% block title %}Hasil Klasterisasi{% endblock %}</h2>
+</div><!-- End Page Title -->
+<section class="section">
+  <div class="row align-items-top">
+    <div class="col">
+
+      <!-- Default Card -->
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"></h2>
+            <div class="table-responsive">
+            {{ result | safe }}
+            </div>
+            {% if plot_path %}
+                <img src="{{ plot_path }}" alt="Cluster Plot">
+            {% endif %}
+        </div>
+      </div><!-- End Default Card -->
+      
+    </div>
+  </div>
+</section>
+
+{% endblock %}
